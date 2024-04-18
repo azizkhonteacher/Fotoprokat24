@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -30,4 +32,35 @@ main {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__left {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header__action-btns {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header .site-nav__item a {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.site-logo {
+  text-decoration: none;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
