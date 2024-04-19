@@ -38,16 +38,46 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #efefef;
 }
 header .header__left {
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: flex-end;
 }
 header .header__action-btns {
-  width: 40%;
   display: flex;
   justify-content: flex-end;
+}
+header .header__action-btns-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  padding: 27px;
+  border-left: 1px solid #efefef;
+}
+header .header__action-btns-btn span {
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+}
+header .header__action-btns-btn.shopping-cart span {
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
 }
 header .site-nav__list {
   display: flex;
@@ -56,9 +86,10 @@ header .site-nav__list {
 }
 header .site-nav__item a {
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .site-logo {
