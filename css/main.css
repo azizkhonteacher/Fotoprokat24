@@ -40,6 +40,7 @@ header {
   justify-content: space-between;
 }
 header .header__left {
+  width: 30%;
   display: flex;
   justify-content: flex-end;
 }
