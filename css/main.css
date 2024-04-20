@@ -41,7 +41,7 @@ header {
   border-bottom: 1px solid #efefef;
 }
 header .header__left {
-  width: 25%;
+  width: 20.5%;
   display: flex;
   justify-content: flex-end;
 }
@@ -99,4 +99,73 @@ header .site-nav__item a {
 .site-logo {
   text-decoration: none;
   display: flex;
+}
+
+.hero {
+  position: relative;
+  height: 650px;
+}
+.hero .container {
+  position: relative;
+  height: 100%;
+}
+.hero__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__text-wrapper {
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+.hero__text-wrapper::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+}
+.hero__title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hero__title-inner {
+  padding: 13px 20px;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.1;
+  color: #000;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero__title-inner:first-child {
+  z-index: 2;
+  position: relative;
+}
+.hero__title-inner:nth-child(2) {
+  z-index: 1;
+  position: relative;
+}
+.hero__title-inner:last-child {
+  z-index: 0;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
