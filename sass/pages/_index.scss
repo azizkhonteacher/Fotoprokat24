@@ -93,3 +93,16 @@
     }
   }
 }
+
+.products{
+  padding: 95px 0;
+  &__title{
+    @include font(600, 18px, 1.2);
+    color: $title-color;
+    text-align: center;
+    text-transform: uppercase;
+    span{
+      color: $pr-color;
+    }
+  }
+}

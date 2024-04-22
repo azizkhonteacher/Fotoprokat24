@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fotoprokat24</title>
     <link rel="stylesheet" href="./images/siteIcon.svg" type="image/x-icon" />
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- FONT'S -->
     <!-- Ubuntu font's -->
     <link rel="stylesheet" href="./fonts/ubuntuFont.css" />
@@ -135,8 +140,39 @@
     <div class="products">
       <div class="container">
         <h2 class="products__title"><span>Популярные</span> товары</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper product-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product__card">
+                <div class="product__card-img">
+                  <img src="https://picsum.photos/200/141" alt="">
+                </div>
+                <div class="product__card-text-wrapper">
+                  <a href="#">PowerShot SX620 HS</a>
+                  <span class="product__card-brand">Canon</span>
+                  <h4 class="product__card-price">300$</h4>
+                </div>
+                <div class="product__card-btns">
+                  <a href="#" class="product__card-more-btn">Подробнее</a>
+                  <button class="product__card-cart-btn">
+                    <img src="./images/svg/cart.svg" alt="product__card-cart-btn">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
 <!-- 23 -->

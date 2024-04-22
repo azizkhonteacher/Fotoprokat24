@@ -202,4 +202,19 @@ header .site-nav__item a {
   font-size: 14px;
   line-height: 1.4;
   color: #000;
+}
+
+.products {
+  padding: 95px 0;
+}
+.products__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.products__title span {
+  color: #60b021;
 }/*# sourceMappingURL=main.css.map */
