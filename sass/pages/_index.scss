@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   height: 650px;
+  flex-shrink: 0;
   .container {
     position: relative;
     height: 100%;
@@ -101,8 +102,27 @@
     color: $title-color;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 27px;
     span{
       color: $pr-color;
+    }
+  }
+
+  &__card{
+    border: 1px solid $border-color;
+    background-color: $bg-color;
+    &-img{
+      width: 100%;
+      padding: 26px 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      img{
+        width: 200px;
+        height: 141px;
+        object-fit: contain;
+      }
     }
   }
 }

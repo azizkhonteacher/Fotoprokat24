@@ -104,6 +104,7 @@ header .site-nav__item a {
 .hero {
   position: relative;
   height: 650px;
+  flex-shrink: 0;
 }
 .hero .container {
   position: relative;
@@ -214,7 +215,26 @@ header .site-nav__item a {
   color: #000;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 27px;
 }
 .products__title span {
   color: #60b021;
+}
+.products__card {
+  border: 1px solid #efefef;
+  background-color: #fff;
+}
+.products__card-img {
+  width: 100%;
+  padding: 26px 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.products__card-img img {
+  width: 200px;
+  height: 141px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */
