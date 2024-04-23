@@ -1,0 +1,28 @@
+%pr-btn {
+  padding: 17px 55px;
+  color: #fff;
+  background: linear-gradient(180deg, #8ee902 0%, #4f9c2c 100%);
+  box-shadow: 0px 2px 7px #70b94d;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+%second-btn {
+  padding: 17px 55px;
+  display: inline-flex;
+  color: $title-color;
+  background-color: $bg-color;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px 0px #00000026;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}

@@ -25,104 +25,160 @@
     position: absolute;
     left: 20px;
     bottom: 50px;
-    &::after{
-        content: '';
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
-        position: absolute;
-        bottom: -30px;
-        left: -30px;
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #8ee902 0%, #4f9c2c 100%);
+      position: absolute;
+      bottom: -30px;
+      left: -30px;
     }
   }
-  &__title{
+  &__title {
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
-    &-inner{
-        padding: 13px 20px;
-        background: $bg-color;
-        box-shadow: 0px 2px 6px 0px #00000026;
-        @include font(600, 30px, 1.1);
-        color: $title-color;
-        width: fit-content;
-        &:first-child{
-            z-index: 2;
-            position: relative;
-        }
-        &:nth-child(2){
-            z-index: 1;
-            position: relative;
-        }
-        &:last-child{
-            z-index: 0;
-            position: relative;
-        }
+    &-inner {
+      padding: 13px 20px;
+      background: $bg-color;
+      box-shadow: 0px 2px 6px 0px #00000026;
+      @include font(600, 30px, 1.1);
+      color: $title-color;
+      width: fit-content;
+      &:first-child {
+        z-index: 2;
+        position: relative;
+      }
+      &:nth-child(2) {
+        z-index: 1;
+        position: relative;
+      }
+      &:last-child {
+        z-index: 0;
+        position: relative;
+      }
     }
   }
 }
 
-.services{
+.services {
   padding: 44px 0 45px;
   background-color: $second-bg;
-  .container{
+  .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
   }
-  &__item{
+  &__item {
     display: flex;
     align-items: center;
     gap: 19px;
-    &-img{
+    &-img {
       width: 32px;
       height: 32px;
       flex-shrink: 0;
       display: flex;
       align-items: center;
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
     }
-    &-title{
+    &-title {
       @include font(400, 14px, 1.4);
       color: $title-color;
     }
   }
 }
 
-.products{
+.products {
   padding: 95px 0;
-  &__title{
+  &__title {
     @include font(600, 18px, 1.2);
     color: $title-color;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 27px;
-    span{
+    span {
       color: $pr-color;
     }
   }
+  .swiper-slide{
+    height: auto !important;
+  }
 
-  &__card{
+  &__card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     border: 1px solid $border-color;
     background-color: $bg-color;
-    &-img{
+    &-img {
       width: 100%;
       padding: 26px 20px 32px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      img{
+      img {
         width: 200px;
         height: 141px;
         object-fit: contain;
       }
+    }
+    &-title-wrapper {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      padding: 0 24px;
+      &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+    &-title {
+      @include font(600, 16px, 1.4);
+      color: $title-color;
+      margin-bottom: 5px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+    }
+    &-brand {
+      @include font(600, 14px, 1.4);
+      color: $text-color;
+    }
+    &-price {
+      @include font(600, 16px, 1.4);
+      color: $pr-color;
+    }
+    &-btns{
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 25px;
+    }
+    &-cart-btn{
+      @extend %pr-btn;
+      padding: 12px 24px;
+    }
+    &-more-btn{
+      @extend %second-btn;
+      padding: 12px 24px; 
     }
   }
 }
