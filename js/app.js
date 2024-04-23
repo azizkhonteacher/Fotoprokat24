@@ -4,15 +4,15 @@ const swiper = new Swiper(".product-swiper", {
   slidesPerView: 3,
   spaceBetween: 22,
 
-  //   navigation: {
-  //     nextEl: "",
-  //     prevEl: "",
-  //   },
+    navigation: {
+      nextEl: ".products__next-btn",
+      prevEl: ".products__prev-btn",
+    },
 });
 
 const productsWrapper = document.getElementById("product-swiper-wrapper");
 
-fetch("https://fakestoreapi.com/products", {
+fetch("https://fakestoreapi.com/products?limit=5&page=1", {
   method: "GET",
 })
   .then((res) => res.json())

@@ -327,4 +327,29 @@ header .site-nav__item a {
 }
 .products__card-more-btn {
   padding: 12px 24px;
+}
+.products__wrapper {
+  position: relative;
+}
+.products__prev-btn, .products__next-btn {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 110px;
+  z-index: 2;
+}
+.products__prev-btn {
+  left: -20px;
+}
+.products__next-btn {
+  rotate: 180deg;
+  right: -20px;
+  box-shadow: 0px -2px 6px 0px rgba(0, 0, 0, 0.1490196078);
 }/*# sourceMappingURL=main.css.map */
