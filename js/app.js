@@ -8,6 +8,10 @@ const swiper = new Swiper(".product-swiper", {
       nextEl: ".products__next-btn",
       prevEl: ".products__prev-btn",
     },
+    // autoplay: {
+    //   delay: 2000,
+    // }, 
+    // speed: 2000
 });
 
 const productsWrapper = document.getElementById("product-swiper-wrapper");
