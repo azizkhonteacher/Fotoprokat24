@@ -1,3 +1,5 @@
+// SWIPER VA API dan ma'lumot olib kelish qismi
+
 const swiper = new Swiper(".product-swiper", {
   direction: "horizontal",
   loop: true,
@@ -48,11 +50,20 @@ fetch("https://fakestoreapi.com/products?limit=5&page=1", {
     });
   });
 
+// CART CLICK HODISASI
 const cartModal = document.getElementById("cart-modal");
 const cartModalOpen = document.getElementById("shopping-cart");
 const overlay = document.getElementById("overlay");
+const closeCartModal = document.getElementById("close-cart-modal");
 
-cartModalOpen.addEventListener("click", () => {
+function closecartModal() {
+  cartModal.classList.remove("open-cart-modal");
+  overlay.classList.remove("open-overlay");
+}
+function opencartModal() {
   cartModal.classList.toggle("open-cart-modal");
   overlay.classList.toggle("open-overlay");
-});
+}
+
+cartModalOpen.addEventListener("click", opencartModal);
+closeCartModal.addEventListener("click", closecartModal);
