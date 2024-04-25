@@ -4,14 +4,14 @@ const swiper = new Swiper(".product-swiper", {
   slidesPerView: 3,
   spaceBetween: 22,
 
-    navigation: {
-      nextEl: ".products__next-btn",
-      prevEl: ".products__prev-btn",
-    },
-    // autoplay: {
-    //   delay: 2000,
-    // }, 
-    // speed: 2000
+  navigation: {
+    nextEl: ".products__next-btn",
+    prevEl: ".products__prev-btn",
+  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
+  // speed: 2000
 });
 
 const productsWrapper = document.getElementById("product-swiper-wrapper");
@@ -47,3 +47,12 @@ fetch("https://fakestoreapi.com/products?limit=5&page=1", {
     `;
     });
   });
+
+const cartModal = document.getElementById("cart-modal");
+const cartModalOpen = document.getElementById("shopping-cart");
+const overlay = document.getElementById("overlay");
+
+cartModalOpen.addEventListener("click", () => {
+  cartModal.classList.toggle("open-cart-modal");
+  overlay.classList.toggle("open-overlay");
+});

@@ -199,12 +199,30 @@
     top: 110px;
     z-index: 2;
   }
-  &__prev-btn{
+  &__prev-btn {
     left: -20px;
   }
-  &__next-btn{
+  &__next-btn {
     rotate: 180deg;
     right: -20px;
     box-shadow: 0px -2px 6px 0px #00000026;
   }
+}
+
+#cart-modal {
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+.open-cart-modal {
+  transform: translateX(0) !important;
+}
+#overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.open-overlay {
+  opacity: 1 !important;
+  pointer-events: visible !important;
 }
