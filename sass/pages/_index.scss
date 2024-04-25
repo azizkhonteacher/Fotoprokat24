@@ -98,14 +98,8 @@
 .products {
   padding: 95px 0;
   &__title {
-    @include font(600, 18px, 1.2);
-    color: $title-color;
-    text-align: center;
-    text-transform: uppercase;
+    @include title;
     margin-bottom: 27px;
-    span {
-      color: $pr-color;
-    }
   }
   .swiper-slide {
     height: auto !important;
@@ -208,6 +202,75 @@
     box-shadow: 0px -2px 6px 0px #00000026;
   }
 }
+
+.looking{
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+  }
+  &__text-wrapper{
+    width: 100%;
+    max-width: 570px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__title{
+    @include title;
+    margin-bottom: 24px;
+  }
+  &__desc{
+    line-height: 1.8;
+    margin-bottom: 17px;
+    span{
+      color: $title-color;
+    }
+  }
+  &__btns-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__cotalog-btn{
+    @extend %pr-btn;
+    text-transform: uppercase;
+  }
+  &__search-btn{
+    @extend %second-btn;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #cart-modal {
   transform: translateX(100%);

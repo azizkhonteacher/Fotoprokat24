@@ -18,6 +18,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   @include font(400, 14px, 1.4);
   background-color: $bg-color;
+  color: $text-color;
 }
 
 main{
