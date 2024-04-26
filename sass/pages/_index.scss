@@ -203,74 +203,82 @@
   }
 }
 
-.looking{
-  .container{
+.looking {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 45px;
   }
-  &__text-wrapper{
+  &__text-wrapper {
     width: 100%;
     max-width: 570px;
     text-align: center;
     margin-bottom: 50px;
   }
-  &__title{
+  &__title {
     @include title;
     margin-bottom: 24px;
   }
-  &__desc{
+  &__desc {
     line-height: 1.8;
     margin-bottom: 17px;
-    span{
+    span {
       color: $title-color;
     }
   }
-  &__btns-wrapper{
+  &__btns-wrapper {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
-  &__cotalog-btn{
+  &__cotalog-btn {
     @extend %pr-btn;
     text-transform: uppercase;
   }
-  &__search-btn{
+  &__search-btn {
     @extend %second-btn;
     text-transform: uppercase;
   }
+  &__rent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    &-card {
+      position: relative;
+      &:nth-child(4){
+        grid-column: 1/3;
+        grid-row: 2/3;
+      }
+      img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+      &__text-wrapper {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+      }
+      &__title {
+        padding: 12px 15px;
+        background: $bg-color;
+        box-shadow: 0px 2px 6px 0px #00000026;
+        @include font(600, 16px, 1.1);
+        color: $title-color;
+        width: fit-content;
+        &:first-child {
+          z-index: 1;
+          position: relative;
+        }
+        &:last-child {
+          z-index: 0;
+          position: relative;
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #cart-modal {
   transform: translateX(100%);
